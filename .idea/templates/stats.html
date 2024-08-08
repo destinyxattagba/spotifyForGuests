@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Songs & Stats </title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li style = "display: inline-block;">
+            <a href = "/"> return to home </a>
+        </li>
+    </ul>
+</nav>
+    <h1> Current Top 50 Spotify Songs </h1>
+    <ul>
+        {% for track in tracks %}
+        <li>
+            <strong> {{track.name}}</strong> by {{track.artist}}
+
+        </li>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>
